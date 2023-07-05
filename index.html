@@ -112,7 +112,7 @@
     </div>
 
     <div class="sectionContainer">
-        <div style="display: inline-block; width: 50vw; ">
+        <div id="aboutText">
             <p id="aboutPara">
                 Hey there, I'm Mohammad, 24 years old,
                 studied computer science at Yarmouk university and currently training at
@@ -144,32 +144,29 @@
 
     </div>
 
-    <div class="sectionContainer">
 
-        <div id="sectionHeaderAndBodyContainer">
-            <div id="educationBody">
-                <img id="universityLogo" src="./images/yuLogo.png" alt="">
-                <div>
-                    <h4 class="eduSubHeader">Bachelor's degree</h4>
-                    <p class="eduSubHeaderDescription">Feb 2018 - Oct 2022</p>
-                </div>
-                <img class="eduTimeLineShape" src="./images/sh3.png" alt="">
-                <div>
-                    <h4 class="eduSubHeader">Yarmouk University</h4>
-                    <p class="eduSubHeaderDescription">Computer Science</p>
-                </div>
-                <div>
-                    <h4 class="eduSubHeader" style="margin-top: 10px;">High School</h4>
-                    <p class="eduSubHeaderDescription">Jan 2017 - Feb 2018</p>
-                </div>
-                <img class="eduTimeLineShape" style="width: 30px;" src="./images/sh3.png" alt="">
-                <div>
-                    <h4 class="eduSubHeader" style="margin-top: 10px;">Yarmouk University Model School</h4>
-                    <p class="eduSubHeaderDescription">Sientific Field</p>
-                </div>
-            </div>
+    <div id="educationBody">
+        <img id="universityLogo" src="./images/yuLogo.png" alt="">
+        <div>
+            <h4 class="eduSubHeader">Bachelor's degree</h4>
+            <p class="eduSubHeaderDescription">Feb 2018 - Oct 2022</p>
         </div>
-    </div><br><br><br><br><br>
+        <img class="eduTimeLineShape" src="./images/sh3.png" alt="">
+        <div>
+            <h4 class="eduSubHeader">Yarmouk University</h4>
+            <p class="eduSubHeaderDescription">Computer Science</p>
+        </div>
+        <div>
+            <h4 class="eduSubHeader" style="margin-top: 10px;">High School</h4>
+            <p class="eduSubHeaderDescription">Jan 2017 - Feb 2018</p>
+        </div>
+        <img class="eduTimeLineShape" style="width: 30px;" src="./images/sh3.png" alt="">
+        <div>
+            <h4 class="eduSubHeader" style="margin-top: 10px;">Yarmouk University Model School</h4>
+            <p class="eduSubHeaderDescription">Sientific Field</p>
+        </div>
+    </div>
+    <br><br><br><br><br>
 
 
     <!-- Skills Section -->
@@ -225,13 +222,17 @@
 
         <div class="projectTemplate">
             <h4>Wireframe & Mockup for E-commerce Website</h4>
-            <hr class="projectsHr"><br><br><br>
-            <a href="">Github Link</a>
+            <hr class="projectsHr"><br>
+            <p>using Miro design tool I have created a mockup and wireframe for e-commerce website called Touch which
+                sells electronics</p>
+            <a href="https://github.com/MohammadBanySaleh/Project2-Portfolio">Github Link</a>
         </div>
         <div class="projectTemplate">
             <h4>My Portfolio</h4><br>
-            <hr class="projectsHr"><br><br><br>
-            <a href="#">Already here &#128517</a>
+            <hr class="projectsHr"><br>
+            <p>Portfolio website for myself, features elegant simple desighn with a lot of white space to improve
+                readability and scannability </p>
+            <a href="#topPage">Already here &#128517</a>
         </div>
 
     </div> <br><br><br><br><br>
@@ -244,31 +245,23 @@
         </div>
         <h2 class="sectionHeader">References</h2><br><br><br>
     </div>
-    <div class="sectionContainer">
 
-        <div id="sectionHeaderAndBodyContainer">
-            <!-- <h2 class="sectionHeader">References</h2><br><br><br> -->
+    <ul style="display: flex; flex-direction: row; justify-content: center;">
+        <li>
+            <h4>Hala Hamdan</h4>
+            <p id="referenceItem">Lead trainer at Orange Coding Academy <br>
+                Email: <span style="color:dodgerblue;">gt.halla.hamdan@orange.com</span>
+            </p>
+            <button type="button" class="btn" id="linkedInBtn">
+                <a href="https://www.linkedin.com/in/hala-hamdan-927941163/" style="color: inherit;">LinkedIn</a>
+            </button>
 
-            <ul style="display: flex; flex-direction: row;">
-                <li>
-                    <h4>Hala Hamdan</h4>
-                    <p id="referenceItem">Lead trainer at Orange Coding Academy <br>
-                        Email: <span style="color:dodgerblue;">gt.halla.hamdan@orange.com</span>
-                    </p>
-                    <button type="button" class="btn" id="linkedInBtn">LinkedIn</button>
-
-                </li>
-                <li style="margin-left: 50px; list-style-type: none;">
-                    <img src="./images/hala-modified.png" alt="" style="width: 130px; height: 130px;">
-
-                </li>
-
-
-            </ul>
-
-        </div>
-
-    </div> <br><br><br><br><br>
+        </li>
+        <li style="margin-left: 50px; list-style-type: none;">
+            <img src="./images/hala-modified.png" alt="" id="refImage">
+        </li>
+    </ul>
+    <br><br><br><br><br>
 
 
 
@@ -287,26 +280,33 @@
 
         </div>
 
+        <div id="linksCol">
+            <h4>Links</h4>
+            <ul style="padding-left: 0px;">
+                <li class="nav-item footerLinks">
+                    <a class="nav-link nav-link-custom footerLinks" href="#educationSection">Education</a>
+                </li>
+
+                <li class="nav-item footerLinks">
+                    <a class="nav-link nav-link-custom footerLinks" href="#aboutSection">About</a>
+                </li>
+
+                <li class="nav-item footerLinks">
+                    <a class="nav-link nav-link-custom footerLinks" href="#skillsSection">Skills</a>
+                </li>
+
+                <li class="nav-item footerLinks">
+                    <a class="nav-link nav-link-custom footerLinks" href="#projectsSection">Projects</a>
+                </li>
+            </ul>
+
+
+        </div>
+
         <img src="./images/logo-color-modified.png" alt="logo" id="footerLogo">
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
